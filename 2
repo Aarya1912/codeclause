@@ -1,0 +1,38 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#result {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+}
+
+select {
+  margin: 10px 0;
+}
+const translateBtn = document.getElementById("translateBtn");
+const inputText = document.getElementById("inputText");
+const selectLanguage = document.getElementById("selectLanguage");
+const result = document.getElementById("result");
+
+translateBtn.addEventListener("click", () => {
+  const text = inputText.value;
+  const language = selectLanguage.value;
+  
+  fetch(`https://api.mymemory.translated.net/get?q=${text}&langpair=${language}|en`)
+    .then(response => response.json())
+    .then(data => {
+      const translatedText = data.responseData.translatedText;
+      result.textContent = translatedText;
+    })
+    .catch(error => console.error("Error:", error));
+});
