@@ -1,0 +1,65 @@
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .movie {
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .movie img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .movie h2 {
+        margin-top: 0;
+    }
+
+    .movie p {
+        margin: 0;
+    }
+</style>
+<input type="text" placeholder="Search for a movie...">
+
+    <div class="movie">
+        <img src="movie1.jpg" alt="Movie 1">
+        <h2>Movie 1</h2>
+        <p>Release Date: January 1, 2020</p>
+        <p>Genre: Action</p>
+        <p>Cast: Actor A, Actress B</p>
+    </div>
+
+    <div class="movie">
+        <img src="movie2.jpg" alt="Movie 2">
+        <h2>Movie 2</h2>
+        <p>Release Date: February 1, 2020</p>
+        <p>Genre: Comedy</p>
+        <p>Cast: Actor C, Actress D</p>
+    </div>
+
+    <div class="movie">
+        <img src="movie3.jpg" alt="Movie 3">
+        <h2>Movie 3</h2>
+        <p>Release Date: March 1, 2020</p>
+        <p>Genre: Drama</p>
+        <p>Cast: Actor E, Actress F</p>
+    </div>
+</div>
